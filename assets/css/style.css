@@ -1,2 +1,23 @@
-#head-container {
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&family=Quicksand:wght@300&display=swap');
+
+:root {
+    --main-col:#46344E;
+    --sec-col:#FAED26;
+    --main-font: Quicksand;
 }
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+}
+
+h1, h2 {
+    font-family: var(--main-font), sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: var(--main-col);
+}
+
+
