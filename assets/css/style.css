@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Oswald&family=Quicksand:wght@300;700&display=swap');
 
 :root {
     --main-col:#00303F;
@@ -17,9 +17,13 @@
     color: var(--main-col);
 }
 
+body {
+    font-weight: 300;
+}
+
 h1, h2 {
     font-family: var(--main-font), sans-serif;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     letter-spacing: 4px;
     color: var(--main-col);
 }
@@ -49,6 +53,7 @@ h1, h2 {
     text-align: left;
     line-height: 35px;
     height:100%;
+    font-family: var(--main-font), sans-serif;
 }
 
 /* Globe icon styling */
@@ -194,3 +199,38 @@ h1, h2 {
     font-weight: bold;
 }
 
+/* Style banner */
+
+#services {
+    height:600px;
+    width:70%;
+    text-align: Left;
+    margin: 0 auto;
+    margin-top: 30px;
+    /* background-color: red; */
+    /* background-color: var(--main-col); */
+    /* opacity: 0.7; */
+}
+
+#services h2 {
+    text-align: left;
+    font-size: 150%;
+}
+
+#services-heading {
+    padding-top: 10px;
+    padding-left: 40px;
+    width: 33%;
+    float: left;
+    /* display: inline-block; */
+}
+
+.service-p {
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    width: 33%;
+    float: left;
+    font-size: 110%;
+}
