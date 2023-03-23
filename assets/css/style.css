@@ -148,3 +148,17 @@ h1, h2 {
 .phone-bg-color:hover{
     background-color:var(--main-col);
 }
+
+#hero-outer{
+    height:600px;
+    width:100%;
+    overflow: hidden;
+    position: relative;
+    margin-top: 6px;
+}
+
+#hero-image {
+    height:600px;
+    width:100%;
+    background: url('../images/surveyor-landscape_resized.webp') no-repeat right center;
+}
