@@ -109,7 +109,7 @@ h1, h2 {
 
 @keyframes spin {
     100% {
-      transform: rotate(1turn);
+      transform: rotate(360deg);
     }
 }
 
@@ -203,11 +203,12 @@ h1, h2 {
 /* Style banner */
 
 #services {
-    height:600px;
+    height:175px;
     width:70%;
     text-align: Left;
     margin: 0 auto;
     margin-top: 30px;
+    padding-bottom: 30px;
 }
 
 #sec-col-head {
@@ -233,4 +234,65 @@ h1, h2 {
     word-spacing: 2px;
     width: 33%;
     float: left;
+}
+
+#service-images{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--sec-col);
+    width:100%;
+    margin:0 auto;
+    padding-right: 15%;
+    padding-left: 15%;
+        
+}
+
+#service-images div{
+    display:flex;
+    color: #3b3ed3;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: 50% 50%; 
+    width: 100%;
+    overflow: hidden;
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    border: 2px solid white;
+    box-sizing: border-box;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    object-fit: cover;
+}
+
+#service-images div:hover{
+    filter:none;
+    color: transparent;
+    opacity: 0.5;
+}
+
+#Eng-surveys {
+    display:flex; 
+    background-image: url('../images/engineering.webp');    
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+
+
+#service-images img {
+    /* height: 100%; */
+    /* width: 100%; */
+    object-fit: contain
+}
+
+#service-images a {
+    /* height: 100%; */
+    /* width: 100%; */
+    /* display: flex; */
 }
