@@ -203,7 +203,10 @@ h1, h2 {
 /* Style banner */
 
 #services {
-    height:175px;
+    display:flex;
+    flex-flow: wrap;
+    flex:auto;
+    height:auto;
     width:70%;
     text-align: Left;
     margin: 0 auto;
@@ -218,6 +221,7 @@ h1, h2 {
 }
 
 #services-heading {
+    display:flex;
     padding-top: 10px;
     padding-left: 25px;
     width: 33%;
@@ -226,11 +230,12 @@ h1, h2 {
 }
 
 .service-p {
+    display:flex;
     padding-top: 10px;
     padding-left: 25px;
     padding-right: 25px;
-    letter-spacing: 1px;
-    word-spacing: 2px;
+    /* letter-spacing: 1px;
+    word-spacing: 2px; */
     width: 33%;
     float: left;
 }
@@ -329,3 +334,46 @@ h1, h2 {
     overflow:hidden;
     border-radius: 5px;
 }
+
+/* media queries */
+
+@media screen and (max-width: 950px) {
+
+    #services {
+        width:90%;
+        margin: 0 auto;
+        margin-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    #services-heading {
+        width:100%;
+    }
+
+    .service-p {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #services {
+        flex:auto;
+        height:auto;
+        width:100%;
+        text-align: Left;
+        margin: 0 auto;
+        margin-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .service-p {
+        width: 100%;
+    }
+
+    #service-images{
+        width:100%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
