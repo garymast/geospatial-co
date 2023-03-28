@@ -229,7 +229,6 @@ h1, h2 {
     padding-top: 10px;
     padding-left: 25px;
     padding-right: 25px;
-
     letter-spacing: 1px;
     word-spacing: 2px;
     width: 33%;
@@ -241,58 +240,92 @@ h1, h2 {
     flex-flow: wrap;
     justify-content: center;
     text-align: center;
-    background-color: var(--sec-col);
     width:100%;
-    margin:0 auto;
     padding-right: 15%;
     padding-left: 15%;
-        
 }
 
 #service-images div{
     display:flex;
-    color: #3b3ed3;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.4);
     background-repeat: no-repeat;
-    background-size: cover; 
     background-position: 50% 50%; 
-    width: 100%;
-    overflow: hidden;
-    width: 250px;
-    height: 250px;
+    width: 275px;
+    height: 200px;
     padding: 10px;
-    border: 2px solid white;
+    margin: 3px;
+    border-radius: 5px;
     box-sizing: border-box;
     align-items:center;
     justify-content:center;
-    overflow:hidden;
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    object-fit: cover;
+
 }
 
 #service-images div:hover{
-    filter:none;
+    margin: 3px;
+    border-radius: 5px;
+    /* filter:none; */
     color: transparent;
-    opacity: 0.5;
+    animation-name: service-zoom;
+    animation-duration: 1.25s;
+    animation-fill-mode: forwards;
 }
 
-#Eng-surveys {
+#service-images div:hover h2{
+    color: transparent;  
+}
+
+/* creates the level of zoom for hero image */
+@keyframes service-zoom{
+    from{
+        transform: scale(1.0);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}
+
+#Eng-surveys:hover {
     display:flex; 
-    background-image: url('../images/engineering.webp');    
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
+    background-image: url('../images/ts.webp');  
 }
 
+#BIM:hover {
+    display:flex; 
+    background-image: url('../images/BIM.webp');  
+}
 
+#UAV:hover {
+    display:flex; 
+    background-image: url('../images/UAV.webp');  
+}
 
-#service-images img {
-    /* height: 100%; */
-    /* width: 100%; */
-    object-fit: contain
+#topo:hover {
+    display:flex; 
+    background-image: url('../images/topo.webp');  
+}
+
+#laser:hover {
+    display:flex; 
+    background-image: url('../images/laser-scanner-2.webp');  
+}
+
+#monitor:hover {
+    display:flex; 
+    background-image: url('../images/monitoring-prism.webp');  
+}
+
+#util:hover {
+    display:flex; 
+    background-image: url('../images/util-mapping.webp');  
+}
+
+#service-images h2 {
+    color: var(--sec-col);
+    font-size: 125%;
 }
 
 #service-images a {
-    /* height: 100%; */
-    /* width: 100%; */
-    /* display: flex; */
+    overflow:hidden;
+    border-radius: 5px;
 }
