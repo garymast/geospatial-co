@@ -7,3 +7,4 @@ https://www.w3schools.com/howto/howto_css_image_text.asp
 image https://www.shutterstock.com/image-illustration/bim-ventilation-system-design-3d-illustration-2142898711
 image https://www.pexels.com/photo/small-mavic-drone-hovering-with-camera-11178057/
 Took general footer layout example from love running
+https://codepad.co/snippet/instagram-icon-gradient-with-font-awesome instagram color gradiant on hover
