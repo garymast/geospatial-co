@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Oswald&family=Quicksand:wght@300;400;700&display=swap');
 :root {
     --main-col:#00303F;
-    /* --sec-col:#b18b15; */
-    --sec-col:#e9112e;
+    --sec-col:#b18b15;
+    /* --sec-col:#e9112e; */
     --main-font: Quicksand;
     --sec-font: Lato;
 }
@@ -167,14 +167,14 @@ h1, h2 {
 #hero-image {
     height:600px;
     width:100%;
-    background: url('../images/surveyor-landscape_resized.webp') no-repeat right center;
+    background: url('../images/pexels-masood-aslami-11178057\ \(2\).jpg') no-repeat center center;
 }
 
 /* Style hero image cover text */
 
-/* #cover-text {
+#cover-text {
     font-size: 150%;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     letter-spacing: 4px;
     
     width: 300px;
@@ -189,10 +189,10 @@ h1, h2 {
     bottom: 10px;
     right: 10px;
     
-    border-radius: 30px 10px 30px 10px;
+    /* border-radius: 30px 10px 30px 10px; */
     
     position: absolute;
-} */
+}
 
 #cover-text h3, #cover-text h2 {
     color:var(--main-col);
@@ -207,7 +207,7 @@ h1, h2 {
     flex-flow: wrap;
     flex:auto;
     height:auto;
-    width:70%;
+    width:1124px; /* Adjust if image sizes change */
     text-align: Left;
     margin: 0 auto;
     margin-top: 30px;
@@ -252,7 +252,7 @@ h1, h2 {
 
 #service-images div{
     display:flex;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.2);
     background-repeat: no-repeat;
     background-position: 50% 50%; 
     width: 275px;
@@ -291,38 +291,35 @@ h1, h2 {
 }
 
 #Eng-surveys:hover {
-    display:flex; 
     background-image: url('../images/ts.webp');  
 }
 
 #BIM:hover {
-    display:flex; 
     background-image: url('../images/BIM.webp');  
 }
 
 #UAV:hover {
-    display:flex; 
     background-image: url('../images/UAV.webp');  
 }
 
 #topo:hover {
-    display:flex; 
     background-image: url('../images/topo.webp');  
 }
 
-#laser:hover {
-    display:flex; 
+#laser:hover { 
     background-image: url('../images/laser-scanner-2.webp');  
 }
 
 #monitor:hover {
-    display:flex; 
     background-image: url('../images/monitoring-prism.webp');  
 }
 
 #util:hover {
-    display:flex; 
     background-image: url('../images/util-mapping.webp');  
+}
+
+#network:hover {
+    background-image: url('../images/network.jpg');  
 }
 
 #service-images h2 {
@@ -335,7 +332,47 @@ h1, h2 {
     border-radius: 5px;
 }
 
+.social-networks {
+    text-align: center;
+
+}
+
+.social-networks > li {
+    display: inline;
+}
+
+.social-networks i {
+    font-size: 160%;
+    margin: 1%;
+    padding: 5%;
+    color: RGBa(0,48,63,0.75);
+}
+
+.fa-github:hover{
+    color: #171515;
+}
+
+.fa-square-twitter:hover{
+    color: #00acee;
+}
+
+.fa-facebook:hover{
+    color: #4267B2;
+}
+
+.fa-instagram:hover{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+
+
 /* media queries */
+
+@media screen and (max-width: 1622px) {
+    #services {
+        width:843px;
+    }
+}
 
 @media screen and (max-width: 950px) {
 
