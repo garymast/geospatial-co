@@ -27,8 +27,68 @@ h1, h2 {
     color: var(--main-col);
 }
 
+/* Style Nav Menu */
+.container {
+	width: 960px;
+	max-width: 100%;
+	padding: 10px;
+	margin: 0 auto;
+}
+
+.main-header .container{
+    display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.main-nav {
+    line-height: 30px;
+    font-size: 110%;
+    letter-spacing: 1px;
+    font-weight:400;
+}
+
+.main-nav i {
+        font-size: 110%;
+        color: var(--sec-col);
+}
+
+.main-nav ul {
+	text-align: center;
+}
+
+.main-nav li {
+	display: inline;
+}
+.main-nav a {
+	display: inline-block;
+	padding: .5em 1.5em;
+}
+
+.main-nav a:hover {
+    color: var(--sec-col);
+    font-weight: bold;
+}
+
+#phone-bg-color {
+    color:var(--sec-col);
+    font-weight: bold;
+}
+
+#phone-bg-color:hover{
+    background-color:var(--main-col);
+}
+
+@media (min-width: 960px) {
+	.main-header .container {
+		justify-content: space-between;
+	}
+}
+
+/* Style Logo */
 #logo-container {
-    height: 70px;
+    height: 50px;
     width: 100%;
     padding-left: 10px;
     margin-top: 10px;
@@ -40,20 +100,19 @@ h1, h2 {
 }
 
 #logo {
-    width:70px;
-    height: 70px;
+    width:50px;
+    height: 50px;
     float: left;
     margin-right: 10px;
     background: url('../images/Logo1.svg') no-repeat center center;
     background-size: cover;
-
 }
 
 #logo-text {
     float: left;
     font-size: 180%;
     text-align: left;
-    line-height: 35px;
+    line-height: 25px;
     height:100%;
     font-family: var(--main-font), sans-serif;
     font-weight: 400;
@@ -68,61 +127,13 @@ h1, h2 {
     background-size: cover;
 }
 
-@keyframes spin {
-    100% {
-      transform: rotate(360deg);
-    }
-}
-
-/* Style nav items */
-
-#menu{
-    line-height: 60px;
-    font-size: 110%;
-    letter-spacing: 2px;
-    font-weight:400;
-}
-
-#menu a{
-    color:inherit;
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-#menu li{
-    float: right;
-    list-style: none;
-    margin-right: 20px;
-
-}
-
-#menu a:hover {
-    color: var(--sec-col);
-    font-weight: bold;
-}
-
-#menu i {
-    font-size: 110%;
-    padding-left: 20px;
-    color: var(--sec-col);
-}
-
-.phone-bg-color {
-    color:var(--sec-col);
-    font-weight: bold;
-    padding-right: 15px;
-}
-
-.phone-bg-color:hover{
-    background-color:var(--main-col);
-}
-
+/* Style Hero image */
 #hero-outer{
     height:600px;
     width:100%;
     overflow: hidden;
     position: relative;
-    margin-top: 6px;
+    /* margin-top: 6px; */
 }
 
 #hero-image {
@@ -132,10 +143,8 @@ h1, h2 {
 }
 
 /* Style hero image cover text */
-
 #cover-text {
     font-size: 150%;
-    /* text-transform: uppercase; */
     letter-spacing: 4px;
     
     width: 300px;
@@ -150,8 +159,6 @@ h1, h2 {
     bottom: 10px;
     right: 10px;
     
-    /* border-radius: 30px 10px 30px 10px; */
-    
     position: absolute;
 }
 
@@ -162,7 +169,6 @@ h1, h2 {
 }
 
 /* Style banner */
-
 #services {
     display:flex;
     flex-flow: wrap;
@@ -195,8 +201,6 @@ h1, h2 {
     padding-top: 10px;
     padding-left: 25px;
     padding-right: 25px;
-    /* letter-spacing: 1px;
-    word-spacing: 2px; */
     width: 33%;
     float: left;
 }
@@ -230,7 +234,6 @@ h1, h2 {
 #service-images div:hover{
     margin: 3px;
     border-radius: 5px;
-    /* filter:none; */
     color: transparent;
     animation-name: service-zoom;
     animation-duration: 1.25s;
@@ -294,7 +297,6 @@ h1, h2 {
 }
 
 /* Footer Styling */
-
 #footer-main {
     border-top: 1px solid rgba(0,48,63,0.25);
     margin-top: 30px;
@@ -341,7 +343,6 @@ h1, h2 {
 }
 
 /* media queries */
-
 @media screen and (max-width: 1622px) {
     #services {
         width:843px;
