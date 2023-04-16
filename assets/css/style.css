@@ -23,7 +23,6 @@ body {
 
 h1, h2 {
     font-family: var(--main-font), sans-serif;
-    /* text-transform: uppercase; */
     letter-spacing: 4px;
     color: var(--main-col);
 }
@@ -45,6 +44,9 @@ h1, h2 {
     height: 70px;
     float: left;
     margin-right: 10px;
+    background: url('../images/Logo1.svg') no-repeat center center;
+    background-size: cover;
+
 }
 
 #logo-text {
@@ -57,54 +59,13 @@ h1, h2 {
     font-weight: 400;
 }
 
-/* Globe icon styling */
-.orb1, .orb2, .orb3{
-    top:37px;
-    height: 15px;
-    width: 68px;
-    border-radius: 50%;
-    border: 1px dashed var(--sec-col);
-    position: absolute;
-    transform: rotate(10deg);
-}
-
-.orb2 {
-    transform: rotate(70deg);
-}
-
-.orb3 {
-    transform: rotate(-50deg);
-}
-
-.orb4 {
-    height: 68px;
-    width: 68px;
-    border-radius: 50%;
-    border: 1px solid var(--sec-col);
-    position: absolute;
-}
-
-#logo-outer:hover .orb1 { 
-    animation: spin 15s infinite linear;
-    border-color: var(--main-col)
-}
-
-#logo-outer:hover .orb2 { 
-    animation: spin 15s infinite linear;
-    border-color: var(--main-col)
-}
-
-#logo-outer:hover .orb3 { 
-    animation: spin 15s infinite linear;
-    border-color: var(--main-col)
-}
-
-#logo-outer:hover .orb4 { 
-    border-color: var(--main-col)
-}
-
 #logo-outer:hover #logo-text { 
     color: var(--sec-col);
+}
+
+#logo-outer:hover #logo { 
+    background: url('../images/Logo2.svg') no-repeat center center;
+    background-size: cover;
 }
 
 @keyframes spin {
