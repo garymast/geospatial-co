@@ -177,16 +177,16 @@ border-bottom: 1px solid rgba(0,48,63,0.25);
 }
 
 /* Style banner */
-.main-content {
+#services {
     display:flex;
     flex-flow: wrap;
     flex:auto;
     height:auto;
-    width:960px; /* Adjust if image sizes change */
+    max-width:843px; /* Adjust if image sizes change */
     text-align: Left;
     margin: 0 auto;
     margin-top: 30px;
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
 }
 
 #sec-col-head {
@@ -198,7 +198,7 @@ border-bottom: 1px solid rgba(0,48,63,0.25);
 #services-heading {
     display:flex;
     padding-top: 10px;
-    padding-left: 25px;
+    padding-left: 10px;
     width: 33%;
     float: left;
     text-align: left;
@@ -206,9 +206,11 @@ border-bottom: 1px solid rgba(0,48,63,0.25);
 
 .service-p {
     display:flex;
-    padding-top: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 10px 0px 20px 50px;
+    /* padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 0px;
+    padding-bottom: 20px; */
     width: 33%;
     float: left;
 }
@@ -219,8 +221,8 @@ border-bottom: 1px solid rgba(0,48,63,0.25);
     justify-content: center;
     text-align: center;
     width:100%;
-    padding-right: 15%;
-    padding-left: 15%;
+    padding-right: 5%;
+    padding-left: 5%;
 }
 
 #service-images div{
@@ -354,17 +356,28 @@ border-bottom: 1px solid rgba(0,48,63,0.25);
 /* media queries */
 @media screen and (max-width: 1622px) {
     #services {
-        width:843px;
+        /* flex:auto; */
+        /* height:auto; */
+        width:900px;
+        text-align: Left;
+        margin: 0 auto;
+        margin-top: 30px;
     }
 }
 
-@media screen and (max-width: 950px) {
+/* @media screen and (max-width: 953px) {
+    #services {
+        width:562px;
+    }
+} */
+
+@media screen and (max-width: 953px) {
 
     #services {
-        width:90%;
+        width:562px;
         margin: 0 auto;
         margin-top: 30px;
-        padding-bottom: 30px;
+        /* padding-bottom: 30px; */
     }
 
     #services-heading {
@@ -373,18 +386,22 @@ border-bottom: 1px solid rgba(0,48,63,0.25);
 
     .service-p {
         width: 50%;
+        padding-bottom: 10px;
+        padding-left: 10px;
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 642px) {
     #services {
         flex:auto;
         height:auto;
         width:100%;
         text-align: Left;
         margin: 0 auto;
-        margin-top: 30px;
-        padding-bottom: 30px;
+        padding-right: 10px;
+        padding-left: 10px;
+        /* margin-top: 30px; */
+        /* padding-bottom: 30px; */
     }
 
     .service-p {
@@ -393,8 +410,8 @@ border-bottom: 1px solid rgba(0,48,63,0.25);
 
     #service-images{
         width:100%;
-        padding-right: 0;
-        padding-left: 0;
+        padding-right: 10px;
+        padding-left: 10px;
     }
 }
 
