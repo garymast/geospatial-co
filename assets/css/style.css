@@ -432,9 +432,40 @@ border-bottom: 1px solid rgba(0,48,63,0.25);
     margin: 5px 0 20px 0;
     border: 1px solid rgba(0,48,63,0.25);
     border-radius: 5px;
-    padding-left: 5px;
+    padding-left: 10px;
 }
 
+.text-input:hover {
+    border-color: var(--sec-col);
+}
+
+.text-input:focus {
+    outline: 1px solid var(--sec-col);
+}
+
+#msgbox {
+    height: 200px;
+    resize: none;  /* user can resize vertically, but width is fixed */
+    padding: 10px;
+    margin-bottom: 0px;
+}
+
+.contact-button {
+    margin-top: 15px;
+    border-radius: 2px;
+    padding: 5px 32px 15px 32px;
+    text-align: center;
+    font-size: 100%;
+    background-color: var(--main-col);
+    color: white;
+    display: block;
+    border-radius: 5px;
+}
+
+.contact-button:hover {
+    background-color:white;
+    color: var(--main-col);
+    }
 /* media queries */
 @media screen and (max-width: 1622px) {
     #services {
