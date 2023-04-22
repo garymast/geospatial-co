@@ -356,7 +356,7 @@ border-bottom: 1px solid rgba(0,48,63,0.25);
 /* Style contact page */
 #contact-container {
     display:flex;
-    /* flex-flow: wrap; */
+    flex-flow: wrap;
     /* flex-direction: column; */
     flex:auto;
     height:auto;
@@ -364,6 +364,7 @@ border-bottom: 1px solid rgba(0,48,63,0.25);
     text-align: Left;
     margin: 0 auto;
     margin-top: 40px;
+    padding: 0, 10%, 0, 10%;
 }
 
 #lhs-container {
@@ -481,3 +482,26 @@ border-bottom: 1px solid rgba(0,48,63,0.25);
     }
 }
 
+/* Contact page media queries */
+@media screen and (max-width: 900px) {
+    #contact-container {
+        width:500px; /* Adjust if image sizes change */
+        text-align: center;
+    }
+    
+    #lhs-container {
+        width: 100%;
+    }
+
+    #contact-info > ul{
+        padding: 0;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    #contact-container {
+        width:300px; /* Adjust if image sizes change */
+        text-align: center;
+    }
+}
