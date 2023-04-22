@@ -357,7 +357,6 @@ border-bottom: 1px solid rgba(0,48,63,0.25);
 #contact-container {
     display:flex;
     flex-flow: wrap;
-    /* flex-direction: column; */
     flex:auto;
     height:auto;
     width:843px; /* Adjust if image sizes change */
@@ -376,17 +375,13 @@ border-bottom: 1px solid rgba(0,48,63,0.25);
 #contact-info {
     width: 100%;
     height: 250px;
-    /* background-color: red; */
 }
 
 #contact-info h2{
     width:100%;
-    /* background-color: white; */
 }
 
 #contact-info > ul{
-    /* list-style: none; */
-    /* background-color:#d6249f; */
     padding: 0px 0 0 10px;
 }
 
@@ -463,14 +458,14 @@ border-bottom: 1px solid rgba(0,48,63,0.25);
 }
 
 .contact-button:hover {
-    background-color:white;
-    color: var(--main-col);
+    background-color:var(--sec-col);
+    font-weight: 700;
+    /* color: var(--main-col); */
     }
+
 /* media queries */
 @media screen and (max-width: 1622px) {
     #services {
-        /* flex:auto; */
-        /* height:auto; */
         width:900px;
         text-align: Left;
         margin: 0 auto;
@@ -478,19 +473,12 @@ border-bottom: 1px solid rgba(0,48,63,0.25);
     }
 }
 
-/* @media screen and (max-width: 953px) {
-    #services {
-        width:562px;
-    }
-} */
-
 @media screen and (max-width: 953px) {
 
     #services {
         width:562px;
         margin: 0 auto;
         margin-top: 30px;
-        /* padding-bottom: 30px; */
     }
 
     #services-heading {
@@ -513,8 +501,6 @@ border-bottom: 1px solid rgba(0,48,63,0.25);
         margin: 0 auto;
         padding-right: 10px;
         padding-left: 10px;
-        /* margin-top: 30px; */
-        /* padding-bottom: 30px; */
     }
 
     .service-p {
@@ -526,12 +512,14 @@ border-bottom: 1px solid rgba(0,48,63,0.25);
         padding-right: 10px;
         padding-left: 10px;
     }
+
+    
 }
 
 /* Contact page media queries */
 @media screen and (max-width: 900px) {
     #contact-container {
-        width:500px; /* Adjust if image sizes change */
+        width:500px;
         text-align: center;
     }
     
@@ -543,11 +531,22 @@ border-bottom: 1px solid rgba(0,48,63,0.25);
         padding: 0;
     }
 
+    #contact-table {
+        width: 100%;
+        margin-left:0%;
+        margin-top: 15px;
+        padding: 30px 20px 0px 20px;
+    }
+
+    .contact-button {
+        margin: 15px auto 0px auto;
+    }
+
 }
 
 @media screen and (max-width: 550px) {
     #contact-container {
-        width:300px; /* Adjust if image sizes change */
+        width:300px;
         text-align: center;
     }
 }
