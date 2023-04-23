@@ -463,7 +463,7 @@ border-bottom: 1px solid rgba(0,48,63,0.25);
 
 #tech-container {
     max-width: 960px;
-    background-color:red;
+    /* background-color:red; */
     display: flex;
     margin: 0 auto;
     margin-top: 40px;
@@ -477,14 +477,15 @@ border-bottom: 1px solid rgba(0,48,63,0.25);
 #tech-heading {
     display: flex;
     width:50%;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     vertical-align: top;
+    padding-right: 10px;
 }
 
 .tech-p {
     display: flex;
     width:50%;
-    background-color: greenyellow;
+    /* background-color: greenyellow; */
     padding-bottom: 20px;
 }
 
@@ -501,11 +502,32 @@ border-bottom: 1px solid rgba(0,48,63,0.25);
     justify-content:center;
 }
 
-    #tech-im-1 {
+#tech-img-1 {
         display: flex;
         background-image: url('../images/total-station.jpg');
         background-size: 275px;
         object-fit: contain;
+}
+
+#tech-img-2 {
+    display: flex;
+    background-image: url('../images/laser-scanner-2.webp');
+    background-size: 300px;
+    object-fit: contain;
+}
+
+#tech-img-3 {
+    display: flex;
+    background-image: url('../images/autocad.jpg');
+    background-size: 300px;
+    object-fit: contain;
+}
+
+#tech-img-4 {
+    display: flex;
+    background-image: url('../images/drone-2.jpg');
+    background-size: 300px;
+    object-fit: contain;
 }
 
     .tech-desc-wrapper {
@@ -514,30 +536,35 @@ border-bottom: 1px solid rgba(0,48,63,0.25);
         width: 50%;
         flex-direction: column;
         vertical-align: middle;
+        padding: 5px;
     }
 
     .tech-desc-wrapper #tech-heading {
         display: flex;
         width: 100%;
-        background-color:black;
+        /* background-color:black; */
         vertical-align: middle;
     }
 
     .tech-desc-wrapper .tech-p {
         display: flex;
         width: 100%;
-        background-color:orange;
+        /* background-color:orange; */
         vertical-align: middle;
     }
 
     .row-wrap {
+        padding: 10px 0 10px 0;
         width:100%;
         display: flex;
         flex-flow: wrap;
         flex:auto;
         justify-content: space-between;
-        border: 1px solid rgba(0,48,63,0.25);
-        border-radius: 5px;
+        border-top: 1px solid rgba(0,48,63,0.25);
+        /* border-bottom: 1px solid rgba(0,48,63,0.25); */
+        /* border-radius: 5px; */
+        overflow: hidden;
+        align-items: center;
     }
 /* ----------------------- media queries --------------------- */
 @media screen and (max-width: 1622px) {
@@ -629,18 +656,24 @@ border-bottom: 1px solid rgba(0,48,63,0.25);
 
 /* Technologies page media queries */
 
-@media screen and (max-width: 675px) {
+@media screen and (max-width: 580px) {
     .row-wrap {
-        /* width:100%;
-        display: flex;
-        flex-flow: wrap;
-        flex:auto;
-        justify-content: space-between; */
         text-align: center;
-        align-items: center;
     }
 
     .tech-image {
-        margin: 3px auto;
+        margin: 0 auto;
+    }
+
+    #tech-heading {
+        width:100%;
+        justify-content: center;
+        text-align: center;
+        padding-right: 0px;
+    }
+
+    .tech-p {
+        width:100%;
+        text-align: center;
     }
 }
