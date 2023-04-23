@@ -207,10 +207,6 @@ border-bottom: 1px solid rgba(0,48,63,0.25);
 .service-p {
     display:flex;
     padding: 10px 0px 20px 50px;
-    /* padding-top: 20px;
-    padding-left: 50px;
-    padding-right: 0px;
-    padding-bottom: 20px; */
     width: 33%;
     float: left;
 }
@@ -221,10 +217,9 @@ border-bottom: 1px solid rgba(0,48,63,0.25);
     flex-flow: wrap;
     justify-content: center;
     text-align: center;
-    width:100%;
     padding-right: 5%;
     padding-left: 5%;
-    max-width: 1300px;
+    max-width: 1200px; /* Adjust to 1350 if require 4 tiles wide shown */ 
 }
 
 #service-images div{
@@ -464,7 +459,55 @@ border-bottom: 1px solid rgba(0,48,63,0.25);
     /* color: var(--main-col); */
     }
 
-/* media queries */
+/* Style technologies page */
+
+#tech-container {
+    max-width: 960px;
+    background-color:red;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 40px;
+    text-align: left;
+    padding: 0 15px;
+    flex-flow: wrap;
+    flex:auto;
+    justify-content: space-between;
+}
+
+#tech-heading {
+    display: flex;
+    width:50%;
+    background-color: blueviolet;
+    vertical-align: top;
+}
+
+.tech-p {
+    display: flex;
+    width:50%;
+    background-color: greenyellow;
+    padding-bottom: 20px;
+}
+
+.tech-image {
+    display:flex;
+    background-repeat: no-repeat;
+    background-position: 30% 10%; 
+    width: 275px;
+    height: 200px;
+    margin: 3px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    align-items:center;
+    justify-content:center;
+}
+
+    #tech-im-1 {
+        display: flex;
+        background-image: url('../images/total-station.jpg');
+        background-size: 275px;
+        object-fit: contain;
+}
+/* ----------------------- media queries --------------------- */
 @media screen and (max-width: 1622px) {
     #services {
         width:900px;
