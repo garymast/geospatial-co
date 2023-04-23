@@ -536,7 +536,8 @@ border-bottom: 1px solid rgba(0,48,63,0.25);
         flex-flow: wrap;
         flex:auto;
         justify-content: space-between;
-        
+        border: 1px solid rgba(0,48,63,0.25);
+        border-radius: 5px;
     }
 /* ----------------------- media queries --------------------- */
 @media screen and (max-width: 1622px) {
@@ -628,7 +629,7 @@ border-bottom: 1px solid rgba(0,48,63,0.25);
 
 /* Technologies page media queries */
 
-@media screen and (max-width: 591px) {
+@media screen and (max-width: 675px) {
     .row-wrap {
         /* width:100%;
         display: flex;
@@ -637,5 +638,9 @@ border-bottom: 1px solid rgba(0,48,63,0.25);
         justify-content: space-between; */
         text-align: center;
         align-items: center;
+    }
+
+    .tech-image {
+        margin: 3px auto;
     }
 }
