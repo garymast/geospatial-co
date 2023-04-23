@@ -9,3 +9,4 @@ image https://www.pexels.com/photo/small-mavic-drone-hovering-with-camera-111780
 Took general footer layout example from love running
 https://codepad.co/snippet/instagram-icon-gradient-with-font-awesome instagram color gradiant on hover
 Header - https://flexbox.ninja/demos/website-header/
+https://en.wikipedia.org/wiki/Total_station ts description

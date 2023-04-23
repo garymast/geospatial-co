@@ -507,6 +507,37 @@ border-bottom: 1px solid rgba(0,48,63,0.25);
         background-size: 275px;
         object-fit: contain;
 }
+
+    .tech-desc-wrapper {
+        display: flex;
+        flex:auto;
+        width: 50%;
+        flex-direction: column;
+        vertical-align: middle;
+    }
+
+    .tech-desc-wrapper #tech-heading {
+        display: flex;
+        width: 100%;
+        background-color:black;
+        vertical-align: middle;
+    }
+
+    .tech-desc-wrapper .tech-p {
+        display: flex;
+        width: 100%;
+        background-color:orange;
+        vertical-align: middle;
+    }
+
+    .row-wrap {
+        width:100%;
+        display: flex;
+        flex-flow: wrap;
+        flex:auto;
+        justify-content: space-between;
+        
+    }
 /* ----------------------- media queries --------------------- */
 @media screen and (max-width: 1622px) {
     #services {
@@ -592,5 +623,19 @@ border-bottom: 1px solid rgba(0,48,63,0.25);
     #contact-container {
         width:300px;
         text-align: center;
+    }
+}
+
+/* Technologies page media queries */
+
+@media screen and (max-width: 591px) {
+    .row-wrap {
+        /* width:100%;
+        display: flex;
+        flex-flow: wrap;
+        flex:auto;
+        justify-content: space-between; */
+        text-align: center;
+        align-items: center;
     }
 }
