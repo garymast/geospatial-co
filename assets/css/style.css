@@ -79,8 +79,12 @@ h2 {
 
 .main-nav a:hover {
     color: var(--sec-col);
-    font-weight: bold;
+    text-decoration: underline;
 }
+
+.active {
+    text-decoration: underline;
+    }
 
 #phone-bg-color {
     color: var(--sec-col);
@@ -488,6 +492,8 @@ h2 {
     /* background-color: blueviolet; */
     vertical-align: top;
     padding-right: 10px;
+    padding-bottom: 10px;
+    font-size: 75%;
 }
 
 .tech-p {
