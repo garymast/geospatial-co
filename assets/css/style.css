@@ -2,7 +2,7 @@
 
 :root {
     --main-col: #00303F;
-    --sec-col: #b18b15;
+    --sec-col: #907114;
     /* --sec-col:#e9112e; */
     --main-font: Quicksand;
     --sec-font: Lato;
@@ -154,6 +154,10 @@ h2 {
 }
 
 /* Style hero image cover text */
+#geo {
+    font-size: 120%;
+}
+
 #cover-text {
     font-size: 150%;
     letter-spacing: 4px;
@@ -172,6 +176,7 @@ h2 {
 
     position: absolute;
 }
+
 
 #cover-text h3,
 #cover-text h2 {
