@@ -8,7 +8,21 @@ It is a fully responsive website which can be viewed on multiple devices.
 
 ![Responsive Mockup](assets/images/readme_images/Responsive.jpg)
 
-## Features 
+# User Experience
+- ## Wireframes
+  - I (roughly) hand drew the wireframe for the site using pen and paper. The layout changed slightly as the site developed.
+ ![Wireframe](assets/images/readme_images/wireframe.jpg)
+
+- ## Design Choices
+  - Color Scheme
+![Color Scheme](assets/images/readme_images/colour-pallete.png) 
+
+  - Typography
+    - The website uses two different fonts both from google fonts:
+      1. Quicksand
+      2. Lato
+
+## Feaures 
 
 ### Existing Features
 
@@ -65,12 +79,8 @@ It is a fully responsive website which can be viewed on multiple devices.
   - Desktop
   - Tablet
   - Mobile
-
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
-
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+- Tested using the lightroom dev tool in Google Chrome.
+  ![Lighthouse](assets/images/readme_images/lighthouse.jpg)
 
 ### Validator Testing 
 
@@ -81,9 +91,9 @@ If this section grows too long, you may want to split it off into a separate fil
   - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fgarymast.github.io%2Fgeospatial-co%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
   ![CSS Validate](assets/images/readme_images/css-check.jpg)
 
-### Unfixed Bugs
+### Bugs and Issues
 
-I did not come accross any bugs at the completion of the project.
+Debugging and troubleshooting was done continuously throughout the development process. All known bugs have now been removed.
 
 ## Deployment
 
@@ -96,33 +106,20 @@ The live link can be found here - https://garymast.github.io/geospatial-co/index
 
 ## Credits 
 
-In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-
-You can break the credits section up into Content and Media, depending on what you have included in your project. 
-
 ### Content 
 
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
+- The text for the Technologies page was taken from the associated wikipedia pages
 - The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+- The fonts used in this project were taken from [Google Fonts](https://fonts.google.com/)
+- The README template was taken from the code institute/ love running github page
+- W3 Schools was used in several areas for code assistance
+- Stack Overflow was used in several areas for code assistance
+- General footer layout was taken from the love running project
+- I used [this tutorial](https://flexbox.ninja/demos/website-header/) for the responsive nav bar
+- I used the [SVG Encoder](https://www.restonk.com/SVGEncoder/) to create the favicon
 
 ### Media
 
-- The photos used on the home and sign up page are from This Open Source site
-- The images used for the gallery page were taken from this other open source site
+- The photos used across the site are from free online stock image websites, shutterstock.com and pexels.com.
 
-
-w3 schools - various
-stackoverflow - various
-love running - general and readme template
-image https://www.shutterstock.com/image-photo/silhouette-surveyor-standing-equipment-near-crane-1612694389
-image https://www.shutterstock.com/image-photo/belgrade-serbia-october-10-2019-young-1566329350
-https://www.w3schools.com/howto/howto_css_image_text.asp
-image https://www.shutterstock.com/image-illustration/bim-ventilation-system-design-3d-illustration-2142898711
-image https://www.pexels.com/photo/small-mavic-drone-hovering-with-camera-11178057/
-Took general footer layout example from love running
-https://codepad.co/snippet/instagram-icon-gradient-with-font-awesome instagram color gradiant on hover
-Header - https://flexbox.ninja/demos/website-header/
-https://en.wikipedia.org/wiki/Total_station ts description
-Photo by Jay York from Pexels: https://www.pexels.com/photo/engineer-designs-a-home-for-a-client-15764116/ autocad image
-Photo by Daniel  St.Pierre from Pexels: https://www.pexels.com/photo/close-up-shot-of-a-drone-camera-flying-8572446/ drone image
+# THANK YOU!
