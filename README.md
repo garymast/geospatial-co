@@ -11,10 +11,12 @@ It is a fully responsive website which can be viewed on multiple devices.
 # User Experience
 - ## Wireframes
   - I (roughly) hand drew the wireframe for the site using pen and paper. The layout changed slightly as the site developed.
- ![Wireframe](assets/images/readme_images/wireframe.jpg)
+  
+![Wireframe](assets/images/readme_images/wireframe.jpg)
 
 - ## Design Choices
   - Color Scheme
+
 ![Color Scheme](assets/images/readme_images/colour-pallete.png) 
 
   - Typography
@@ -80,16 +82,20 @@ It is a fully responsive website which can be viewed on multiple devices.
   - Tablet
   - Mobile
 - Tested using the lightroom dev tool in Google Chrome.
-  ![Lighthouse](assets/images/readme_images/lighthouse.jpg)
+
+![Lighthouse](assets/images/readme_images/lighthouse.jpg)
 
 ### Validator Testing 
 
 - HTML
   - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fgarymast.github.io%2Fgeospatial-co%2Findex.html)
-  ![HTML Validate](assets/images/readme_images/html-check.jpg)
+
+![HTML Validate](assets/images/readme_images/html-check.jpg)
+
 - CSS
   - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fgarymast.github.io%2Fgeospatial-co%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
-  ![CSS Validate](assets/images/readme_images/css-check.jpg)
+
+![CSS Validate](assets/images/readme_images/css-check.jpg)
 
 ### Bugs and Issues
 
